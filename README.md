@@ -37,7 +37,7 @@ private final String PASSWORD = "password";
 Add JavaFX and MySQL connector to your IDE or build path
 
 Run studentApp.java
-
+I gave updated this file.
 Note: I have taken help rom chatgpt to get some coe and researched in other more websites like w3schools to make best version of my code.
 👤 Author
 Niraj Bhandari
