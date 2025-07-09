@@ -92,6 +92,7 @@ Admin and Employee tables connect but do not display data in TableView (UI)
 
 JUnit code is written but not fully integrated/tested yet
 
+Some  of the codes here are from Ai. To make the code best i have to use Ai
 Author
 Niraj Bhandari
 Id: 23093760
