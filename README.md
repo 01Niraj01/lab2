@@ -1,46 +1,97 @@
-Student Management App (JavaFX + MySQL)
-About
-A basic JavaFX app to view, add, update, and delete student records from a MySQL database.
+HR Management Application (JavaFX + MySQL)
+Overview
+This is a JavaFX-based Human Resource (HR) Management System developed as part of Lab 3. It includes GUI-based pages, MySQL database integration, DAO usage with ORM practices, and JUnit testing.
 
 Features
-View all students
+✅ Login Module
+Email and Password input
 
-Add a new student
+Secure login authentication
 
-Update existing student by ID
+✅ Dashboard Module
+Buttons: Admin, Employee, Logout, Exit
 
-Delete student by ID
+Displays welcome message and current date
 
-Easy-to-use graphical interface
+✅ Admin Module
+Create, View, Update, Delete Admin Records
 
-🛠 Requirements
-Java JDK 11 or later
+Navigation: Back, Logout
 
-JavaFX SDK
+(⚠ Currently, data is not displayed despite successful database connection)
+
+✅ Employee Module
+Create, View, Update, Delete Employee Records
+
+Navigation: Back, Logout
+
+(⚠ Same issue as Admin module: data not displaying)
+
+✅ Database Structure
+Tables:
+
+Admin
+
+Employee Detail
+
+Salary
+
+MySQL database is used to store and retrieve data
+
+✅ DAO and ORM
+Data access through:
+
+AdminDAO.java
+
+EmployeeDAO.java
+
+LoginDAO.java
+
+Uses Java Models mapped to database
+
+✅ Database Connection
+JDBC (MySQL Connector/J)
+
+Includes connection setup with URL, username, and password
+
+✅ JUnit Testing
+Test cases written to calculate yearly salaries
+
+Covers various employee roles and salary structures
+
+Technologies Used
+JavaFX
 
 MySQL
 
-MySQL Connector/J
+JDBC
 
-🗄 Database Setup
-Opened XAMPP and through local host i created a databse studentdb 
-🔌 Database Connection
-In your code, update if needed:
+Object-Oriented Programming (OOP)
 
-java
-Copy
-Edit
-private final String URL = "jdbc:mysql://localhost:3306/studentdb";
-private final String USER = "root";
-private final String PASSWORD = "password";
-▶ How to Run
-Add JavaFX and MySQL connector to your IDE or build path
+JUnit (Testing)
 
-Run studentApp.java
-I gave updated this file.
-Note: I have taken help rom chatgpt to get some coe and researched in other more websites like w3schools to make best version of my code.
-👤 Author
+GitHub (Version Control)
+
+Setup Instructions
+Clone the repository
+
+Import project into your Java IDE (e.g., IntelliJ, Eclipse)
+
+Add JDBC Driver to the classpath (mysql-connector-j-x.x.x.jar)
+
+Configure MySQL database
+
+Create the required tables: Admin, Employee Detail, Salary
+
+Run the application
+
+Login using valid credentials
+
+Known Issues
+Admin and Employee tables connect but do not display data in TableView (UI)
+
+JUnit code is written but not fully integrated/tested yet
+
+Author
 Niraj Bhandari
-Student ID: 23093760
-Date: 03-July-2025
-
+Id: 23093760
